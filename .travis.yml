@@ -19,7 +19,7 @@ before_install:
       echo `pwd`;
       readlink -f HDF5-1.12.0-win64.msi;
       ls -lastr `pwd`/HDF5-1.12.0-win64.msi;
-      msiexec /i `pwd`/HDF5-1.12.0-win64.msi /qn TARGETDIR=`pwd`/../hdf5-1.12.0/dist;
+      msiexec /i `pwd`/HDF5-1.12.0-win64.msi /qn /lv!;
       cd ..;
       which h5dump;
       ls `pwd`/hdf5-1.12.0/dist;
