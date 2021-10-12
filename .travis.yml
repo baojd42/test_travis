@@ -21,4 +21,4 @@ before_install:
   - ls -lastr `pwd`/HDF5-1.12.0-win64.msi;
   - powershell "Start-Process -FilePath msiexec.exe -Wait -ArgumentList '/i HDF5-1.10.5-win64.msi /qn'"
   - cd ..;
-  - ls "C:/Program Files/HDF_Group/HDF5";
+  - ls "C:/Program Files/";
